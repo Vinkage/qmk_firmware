@@ -57,16 +57,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_MODLEFT] = LAYOUT_split_3x5_3(
-  KC_TAB, KC_PGUP, XXXXXXX, KC_HOME, KC_CAPS,      _______,_______,_______,_______,_______,
-  KC_ESC, KC_PGDN, XXXXXXX, KC_END, XXXXXXX,       _______,_______,_______,_______,_______,
+  KC_TAB,  KC_PGUP, XXXXXXX, KC_HOME, KC_CAPS,      _______,_______,_______,_______,_______,
+  KC_ESC,  KC_PGDN, LCTL(KC_A), KC_END, KC_SPC,       _______,_______,_______,_______,_______,
   KC_LSFT, KC_LALT, KC_LCTL, KC_LGUI, LM(_AWESOME, MOD_LGUI),     _______,_______,_______,_______,_______,
                    _______,_______, KC_DEL,        KC_ENT, TG(_NAV), _______
 ),
 
 [_MODRIGHT] = LAYOUT_split_3x5_3(
   _______,_______,_______,_______,_______,     KC_CAPS, KC_HOME, XXXXXXX, KC_PGUP, KC_TAB,
-  _______,_______,_______,_______,_______,     XXXXXXX, KC_END, XXXXXXX, KC_PGDN, KC_ESC,
-  _______,_______,_______,_______,_______,     XXXXXXX, KC_RGUI, KC_RCTL, KC_RALT, KC_RSFT,
+  _______,_______,_______,_______,_______,     XXXXXXX, KC_END,  RCTL(KC_A), KC_PGDN, KC_ESC,
+  _______,_______,_______,_______,_______,     RCTL(KC_SPACE), KC_RGUI, KC_RCTL, KC_RALT, KC_RSFT,
                   _______, TG(_NAV), KC_DEL,   KC_ENT, _______, _______
 ),
 
@@ -89,8 +89,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_AWESOME] = LAYOUT_split_3x5_3(
   _______,_______,_______,_______,_______,     KC_1, KC_2, KC_3, KC_4, KC_5,
   _______,_______,_______,_______,_______,     KC_H, KC_J, KC_K, KC_L, KC_6,
-  _______,_______,_______,_______,_______,     KC_9, LCTL(KC_J), LCTL(KC_K), KC_8, KC_7,
-                  _______,_______,_______,     _______,_______,_______
+  _______,_______,_______,_______,_______,     KC_9, LCTL(KC_J), KC_8, KC_DOT, KC_7,
+                  _______,_______,_______,     KC_SPC,_______,_______
   )
 };
 
