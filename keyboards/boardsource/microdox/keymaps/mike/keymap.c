@@ -58,14 +58,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_MODLEFT] = LAYOUT_split_3x5_3(
   KC_TAB,  KC_PGUP, XXXXXXX, KC_HOME, KC_CAPS,      _______,_______,_______,_______,_______,
-  KC_ESC,  KC_PGDN, LCTL(KC_A), KC_END, KC_SPC,       _______,_______,_______,_______,_______,
+  KC_ESC,  KC_PGDN, KC_GRV, KC_END, KC_SPC,       _______,_______,_______,_______,_______,
   KC_LSFT, KC_LALT, KC_LCTL, KC_LGUI, LM(_AWESOME, MOD_LGUI),     _______,_______,_______,_______,_______,
                    _______,_______, KC_DEL,        KC_ENT, TG(_NAV), _______
 ),
 
 [_MODRIGHT] = LAYOUT_split_3x5_3(
   _______,_______,_______,_______,_______,     KC_CAPS, KC_HOME, XXXXXXX, KC_PGUP, KC_TAB,
-  _______,_______,_______,_______,_______,     XXXXXXX, KC_END,  RCTL(KC_A), KC_PGDN, KC_ESC,
+  _______,_______,_______,_______,_______,     XXXXXXX, KC_END,  KC_GRV, KC_PGDN, KC_ESC,
   _______,_______,_______,_______,_______,     RCTL(KC_SPACE), KC_RGUI, KC_RCTL, KC_RALT, KC_RSFT,
                   _______, TG(_NAV), KC_DEL,   KC_ENT, _______, _______
 ),
@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_FUNC] = LAYOUT_split_3x5_3(
   _______,_______,_______,_______,_______,     KC_PSCR, KC_F9, KC_F10,KC_F11,KC_F12,
-  _______,_______,_______,_______,_______,     KC_NLCK, KC_F5, KC_F6, KC_F7,KC_F8,
+  _______,_______,_______,_______,_______,     KC_NUM_LOCK, KC_F5, KC_F6, KC_F7,KC_F8,
   _______,_______,_______,_______,_______,     KC_INS,KC_F1,KC_F2,KC_F3,KC_F4,
                   _______,_______,_______,     _______,_______,_______
 
